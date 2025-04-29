@@ -6,18 +6,18 @@
     "id": "did:web:raw.githubusercontent.com:pvinualese:workshop-gaiax:main",
     "verificationMethod": [
       {
-        "id": "did:web:raw.githubusercontent.com:pvinualese:workshop-gaiax:main#key-0",
+        "id": "did:web:raw.githubusercontent.com:pvinualese:workshop-gaiax:main#key-1",
         "type": "JsonWebKey2020",
         "publicKeyJwk": {
           "kty": "RSA",
-          "n": "o4ISnqjmfmlHNUMDBa_vWDs9iQhn1pcvWKdkSIKpnro2--InqtPaIp_vI_a4TATYVnN1ZYU46Jd9M5L4wckw1u6CNG8IDKIa4tZwE_jBwV1yd8gJ6STKxG1y2rawzH73QDHUkhSrIVGVmPAtsQQmkpXd6HWcNA8YSAB6XX1jnnb5juDDi2eQrasSp2ZYqBLZlgcfdArgsOxmocho_piQPAuZsNVJ9T6EJqzwszT48gBNPFhE98_u-Q9OXwS0BmoGnNHIWtsKhY4Vfmzm679jfZt7kFNLOs9UV1A3YLLke0p98t-2aiPGM7vcSQZ8trv6SoDImOjiM1Y3SnuohuDBkw",
-          "e": "AQAB",
-          "alg": "RS256",
-          "x5u": "https://raw.githubusercontent.com/pvinualese/workshop-gaiax/main/cert.pem"
+          "n": "{Replace with your JWK}",
+          "e": "{Replace with your JWK}",
+          "alg": "{Replace with your JWK}",
+          "x5u": "https://raw.githubusercontent.com/pvinualese/workshop-gaiax/main/{fileName}.pem"
         }
       }
     ],
     "assertionMethod": [
-      "did:web:raw.githubusercontent.com:pvinualese:workshop-gaiax:main#key-0"
+      "did:web:raw.githubusercontent.com:pvinualese:workshop-gaiax:main#key-1"
     ]
   }
