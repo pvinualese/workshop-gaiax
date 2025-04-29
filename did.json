@@ -10,9 +10,9 @@
         "type": "JsonWebKey2020",
         "publicKeyJwk": {
           "kty": "RSA",
-          "n": "{Replace with your JWK}",
-          "e": "{Replace with your JWK}",
-          "alg": "{Replace with your JWK}",
+          "n": "w7GE1Wmz0N3Wj9loOECP8MogaoLxssGUG3W2WaFh84nvcFDHZBX_WRYxtv5O91CSJ0Vh7q2GOlHnhpRSe9p4RlKgL8B93cQB5ymwAK8_4GIhixwqIn_grpzBpIe_CFGYMxzdiQaWToBRbOdSt2xMDc_RF2pBU5WpXoaRhSYIAQnLx8PW3_3M6qNfs0bLV4q6aPnmTLLb5nJouzNLlyP0tSpwQQGB5yV-Utv5Iw3w09HTnCQWFhV8rLJ0DnA-i-SqOoGXmaR7VvzcI6xz0Ap1u1MPX3jqs3ZiAE9gGWi-MWGNM1U30DapYrV4exyw6mQsPkh11ySH7UL5M7CbMLK0RQ",
+          "e": "AQAB",
+          "alg": "RS256",
           "x5u": "https://raw.githubusercontent.com/pvinualese/workshop-gaiax/main/{fileName}.pem"
         }
       }
