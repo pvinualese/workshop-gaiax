@@ -1,0 +1,2061 @@
+[
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:GPSUnit_78",
+      "type": [
+        "VerifiableCredential",
+        "gx:GPSUnit"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.227+00:00",
+      "credentialSubject": {
+        "@id": "ex:GPSUnit_78#cs",
+        "gx:seconds": 56,
+        "gx:minutes": 48,
+        "gx:degrees": 46,
+        "gx:decimals": {
+          "@value": 0.88,
+          "@type": "xsd:float"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:GPSLocation_543",
+      "type": [
+        "VerifiableCredential",
+        "gx:GPSLocation"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.228+00:00",
+      "credentialSubject": {
+        "@id": "ex:GPSLocation_543#cs",
+        "gx:latitude": {
+          "@id": "ex:GPSUnit_78#cs"
+        },
+        "gx:altitude": "JmKFKkkZ",
+        "gx:crs": "CRS",
+        "gx:longitude": {
+          "@id": "ex:GPSUnit_78#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:LegalPerson_713",
+      "type": [
+        "VerifiableCredential",
+        "gx:LegalPerson"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.228+00:00",
+      "credentialSubject": {
+        "@id": "ex:LegalPerson_713#cs",
+        "gx:legalAddress": {
+          "@id": "ex:Address_992#cs"
+        },
+        "gx:subOrganisationOf": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:registrationNumber": {
+          "@id": "https://example.org/subjects/123"
+        },
+        "gx:headquartersAddress": {
+          "@id": "ex:Address_992#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:AccessControlManagement_895",
+      "type": [
+        "VerifiableCredential",
+        "gx:AccessControlManagement"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.228+00:00",
+      "credentialSubject": {
+        "@id": "ex:AccessControlManagement_895#cs",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:mimeTypes": "application/vnd.hsl",
+        "gx:governingLawCountries": "KR",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:AssetsManagement_222",
+      "type": [
+        "VerifiableCredential",
+        "gx:AssetsManagement"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.228+00:00",
+      "credentialSubject": {
+        "@id": "ex:AssetsManagement_222#cs",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:mimeTypes": "application/vnd.etsi.iptvprofile+xml",
+        "gx:governingLawCountries": "JM",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:BusinessContinuityMeasures_646",
+      "type": [
+        "VerifiableCredential",
+        "gx:BusinessContinuityMeasures"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.228+00:00",
+      "credentialSubject": {
+        "@id": "ex:BusinessContinuityMeasures_646#cs",
+        "gx:mimeTypes": "multipart/x-mixed-replace",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:governingLawCountries": "ES",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:ChangeAndConfigurationManagement_562",
+      "type": [
+        "VerifiableCredential",
+        "gx:ChangeAndConfigurationManagement"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.228+00:00",
+      "credentialSubject": {
+        "@id": "ex:ChangeAndConfigurationManagement_562#cs",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:mimeTypes": "application/vnd.eprints.data+xml",
+        "gx:governingLawCountries": "UZ"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:ComplianceAssurance_976",
+      "type": [
+        "VerifiableCredential",
+        "gx:ComplianceAssurance"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.228+00:00",
+      "credentialSubject": {
+        "@id": "ex:ComplianceAssurance_976#cs",
+        "gx:governingLawCountries": "MU",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:mimeTypes": "application/vnd.ms-ims"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:CopyrightAndIntellectualPropertyDocument_553",
+      "type": [
+        "VerifiableCredential",
+        "gx:CopyrightAndIntellectualPropertyDocument"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.228+00:00",
+      "credentialSubject": {
+        "@id": "ex:CopyrightAndIntellectualPropertyDocument_553#cs",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:governingLawCountries": "RS",
+        "gx:mimeTypes": "application/vnd.openxmlformats-officedocument.presentationml.slide+xml",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:CustomerAuditingRights_452",
+      "type": [
+        "VerifiableCredential",
+        "gx:CustomerAuditingRights"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.228+00:00",
+      "credentialSubject": {
+        "@id": "ex:CustomerAuditingRights_452#cs",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:mimeTypes": "application/vnd.openxmlformats-officedocument.presentationml.slideUpdateInfo+xml",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:governingLawCountries": "CI"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:CustomerDataAccessTerms_903",
+      "type": [
+        "VerifiableCredential",
+        "gx:CustomerDataAccessTerms"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.229+00:00",
+      "credentialSubject": {
+        "@id": "ex:CustomerDataAccessTerms_903#cs",
+        "gx:mimeTypes": "application/vnd.fujifilm.fb.docuworks",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:governingLawCountries": "MA",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:CustomerDataProcessingTerms_530",
+      "type": [
+        "VerifiableCredential",
+        "gx:CustomerDataProcessingTerms"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.229+00:00",
+      "credentialSubject": {
+        "@id": "ex:CustomerDataProcessingTerms_530#cs",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:mimeTypes": "application/vnd.cryptomator.vault",
+        "gx:governingLawCountries": "BO",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:DataProtectionRegulationMeasures_110",
+      "type": [
+        "VerifiableCredential",
+        "gx:DataProtectionRegulationMeasures"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.229+00:00",
+      "credentialSubject": {
+        "@id": "ex:DataProtectionRegulationMeasures_110#cs",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:governingLawCountries": "CW",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:mimeTypes": "application/merge-patch+json"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:DevelopmentCycleSecurity_651",
+      "type": [
+        "VerifiableCredential",
+        "gx:DevelopmentCycleSecurity"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.229+00:00",
+      "credentialSubject": {
+        "@id": "ex:DevelopmentCycleSecurity_651#cs",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:mimeTypes": "application/pgp-signature",
+        "gx:governingLawCountries": "SZ"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:DocumentChangeProcedures_419",
+      "type": [
+        "VerifiableCredential",
+        "gx:DocumentChangeProcedures"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.229+00:00",
+      "credentialSubject": {
+        "@id": "ex:DocumentChangeProcedures_419#cs",
+        "gx:governingLawCountries": "SM",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:mimeTypes": "image/vnd.fst"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:EmployeeResponsibilities_47",
+      "type": [
+        "VerifiableCredential",
+        "gx:EmployeeResponsibilities"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.229+00:00",
+      "credentialSubject": {
+        "@id": "ex:EmployeeResponsibilities_47#cs",
+        "gx:mimeTypes": "application/fastsoap",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:governingLawCountries": "KR",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:EnvironmentalImpactReport_775",
+      "type": [
+        "VerifiableCredential",
+        "gx:EnvironmentalImpactReport"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.229+00:00",
+      "credentialSubject": {
+        "@id": "ex:EnvironmentalImpactReport_775#cs",
+        "gx:mimeTypes": "application/vnd.commonspace",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:governingLawCountries": "BM",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:GovernmentInvestigationManagement_619",
+      "type": [
+        "VerifiableCredential",
+        "gx:GovernmentInvestigationManagement"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.229+00:00",
+      "credentialSubject": {
+        "@id": "ex:GovernmentInvestigationManagement_619#cs",
+        "gx:governingLawCountries": "NU",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:mimeTypes": "application/vnd.google-earth.kmz",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:InformationSecurityOrganization_657",
+      "type": [
+        "VerifiableCredential",
+        "gx:InformationSecurityOrganization"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.229+00:00",
+      "credentialSubject": {
+        "@id": "ex:InformationSecurityOrganization_657#cs",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:governingLawCountries": "CX",
+        "gx:mimeTypes": "application/simple-message-summary"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:InformationSecurityPolicies_979",
+      "type": [
+        "VerifiableCredential",
+        "gx:InformationSecurityPolicies"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.229+00:00",
+      "credentialSubject": {
+        "@id": "ex:InformationSecurityPolicies_979#cs",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:governingLawCountries": "GM",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:mimeTypes": "video/vnd.radgamettools.smacker"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:InformationSecurityRiskManagement_761",
+      "type": [
+        "VerifiableCredential",
+        "gx:InformationSecurityRiskManagement"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.229+00:00",
+      "credentialSubject": {
+        "@id": "ex:InformationSecurityRiskManagement_761#cs",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:governingLawCountries": "SG",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:mimeTypes": "application/vnd.3gpp.mcvideo-ue-config+xml"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:LegallyBindingAct_839",
+      "type": [
+        "VerifiableCredential",
+        "gx:LegallyBindingAct"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.229+00:00",
+      "credentialSubject": {
+        "@id": "ex:LegallyBindingAct_839#cs",
+        "gx:governingLawCountries": "IO",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:mimeTypes": "application/vnd.ipld.car"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:OperationalSecurity_585",
+      "type": [
+        "VerifiableCredential",
+        "gx:OperationalSecurity"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.229+00:00",
+      "credentialSubject": {
+        "@id": "ex:OperationalSecurity_585#cs",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:governingLawCountries": "BN",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:mimeTypes": "application/3gpdash-qoe-report+xml"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:PhysicalSecurity_133",
+      "type": [
+        "VerifiableCredential",
+        "gx:PhysicalSecurity"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.229+00:00",
+      "credentialSubject": {
+        "@id": "ex:PhysicalSecurity_133#cs",
+        "gx:governingLawCountries": "YT",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:mimeTypes": "application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:ProcurementManagementSecurity_207",
+      "type": [
+        "VerifiableCredential",
+        "gx:ProcurementManagementSecurity"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.229+00:00",
+      "credentialSubject": {
+        "@id": "ex:ProcurementManagementSecurity_207#cs",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:mimeTypes": "application/vnd.ipld.raw",
+        "gx:governingLawCountries": "CZ"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:ProductSecurity_815",
+      "type": [
+        "VerifiableCredential",
+        "gx:ProductSecurity"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.230+00:00",
+      "credentialSubject": {
+        "@id": "ex:ProductSecurity_815#cs",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:mimeTypes": "application/vnd.mfmp",
+        "gx:governingLawCountries": "JE",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:RoleAndResponsibilities_135",
+      "type": [
+        "VerifiableCredential",
+        "gx:RoleAndResponsibilities"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.230+00:00",
+      "credentialSubject": {
+        "@id": "ex:RoleAndResponsibilities_135#cs",
+        "gx:governingLawCountries": "VI",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:mimeTypes": "application/vnd.joost.joda-archive",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:SecurityIncidentManagement_112",
+      "type": [
+        "VerifiableCredential",
+        "gx:SecurityIncidentManagement"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.230+00:00",
+      "credentialSubject": {
+        "@id": "ex:SecurityIncidentManagement_112#cs",
+        "gx:mimeTypes": "application/vnd.etsi.iptvueprofile+xml",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:governingLawCountries": "MT",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:ServiceAgreementOffer_462",
+      "type": [
+        "VerifiableCredential",
+        "gx:ServiceAgreementOffer"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.230+00:00",
+      "credentialSubject": {
+        "@id": "ex:ServiceAgreementOffer_462#cs",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:governingLawCountries": "TT",
+        "gx:mimeTypes": "video/matroska",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:UserDocumentationMaintenance_880",
+      "type": [
+        "VerifiableCredential",
+        "gx:UserDocumentationMaintenance"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.230+00:00",
+      "credentialSubject": {
+        "@id": "ex:UserDocumentationMaintenance_880#cs",
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:governingLawCountries": "SE",
+        "gx:mimeTypes": "application/tamp-apex-update-confirm"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:Measure_565",
+      "type": [
+        "VerifiableCredential",
+        "gx:Measure"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.230+00:00",
+      "credentialSubject": {
+        "@id": "ex:Measure_565#cs",
+        "httpsschema:description": "SLDIKF",
+        "gx:legalDocuments": [
+          {
+            "@id": "ex:AccessControlManagement_895#cs"
+          },
+          {
+            "@id": "ex:AssetsManagement_222#cs"
+          },
+          {
+            "@id": "ex:BusinessContinuityMeasures_646#cs"
+          },
+          {
+            "@id": "ex:ChangeAndConfigurationManagement_562#cs"
+          },
+          {
+            "@id": "ex:ComplianceAssurance_976#cs"
+          },
+          {
+            "@id": "ex:CopyrightAndIntellectualPropertyDocument_553#cs"
+          },
+          {
+            "@id": "ex:CustomerAuditingRights_452#cs"
+          },
+          {
+            "@id": "ex:CustomerDataAccessTerms_903#cs"
+          },
+          {
+            "@id": "ex:CustomerDataProcessingTerms_530#cs"
+          },
+          {
+            "@id": "ex:DataProtectionRegulationMeasures_110#cs"
+          },
+          {
+            "@id": "ex:DevelopmentCycleSecurity_651#cs"
+          },
+          {
+            "@id": "ex:DocumentChangeProcedures_419#cs"
+          },
+          {
+            "@id": "ex:EmployeeResponsibilities_47#cs"
+          },
+          {
+            "@id": "ex:EnvironmentalImpactReport_775#cs"
+          },
+          {
+            "@id": "ex:GovernmentInvestigationManagement_619#cs"
+          },
+          {
+            "@id": "ex:InformationSecurityOrganization_657#cs"
+          },
+          {
+            "@id": "ex:InformationSecurityPolicies_979#cs"
+          },
+          {
+            "@id": "ex:InformationSecurityRiskManagement_761#cs"
+          },
+          {
+            "@id": "ex:LegallyBindingAct_839#cs"
+          },
+          {
+            "@id": "ex:OperationalSecurity_585#cs"
+          },
+          {
+            "@id": "ex:PhysicalSecurity_133#cs"
+          },
+          {
+            "@id": "ex:ProcurementManagementSecurity_207#cs"
+          },
+          {
+            "@id": "ex:ProductSecurity_815#cs"
+          },
+          {
+            "@id": "ex:RoleAndResponsibilities_135#cs"
+          },
+          {
+            "@id": "ex:SecurityIncidentManagement_112#cs"
+          },
+          {
+            "@id": "ex:ServiceAgreementOffer_462#cs"
+          },
+          {
+            "@id": "ex:UserDocumentationMaintenance_880#cs"
+          }
+        ]
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:ContactInformation_229",
+      "type": [
+        "VerifiableCredential",
+        "gx:ContactInformation"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.230+00:00",
+      "credentialSubject": {
+        "@id": "ex:ContactInformation_229#cs",
+        "gx:email": "agOpqHac",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:LegalDocument_418",
+      "type": [
+        "VerifiableCredential",
+        "gx:LegalDocument"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.230+00:00",
+      "credentialSubject": {
+        "@id": "ex:LegalDocument_418#cs",
+        "gx:mimeTypes": "application/vnd.patientecommsdoc",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:governingLawCountries": "CI"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:DataPortability_797",
+      "type": [
+        "VerifiableCredential",
+        "gx:DataPortability"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.230+00:00",
+      "credentialSubject": {
+        "@id": "ex:DataPortability_797#cs",
+        "gx:legalDocument": {
+          "@id": "ex:LegalDocument_418#cs"
+        },
+        "gx:documentations": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:deletionMethods": "OXMCcjVS",
+        "gx:formats": "YNdRxFWn",
+        "gx:pricing": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:deletionTimeframe": "zzYEMrmw",
+        "gx:means": "LzoGbafP",
+        "gx:resource": "WfXrlbik",
+        "gx:contactInformation": {
+          "@id": "ex:ContactInformation_229#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:DataAccountExport_502",
+      "type": [
+        "VerifiableCredential",
+        "gx:DataAccountExport"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.230+00:00",
+      "credentialSubject": {
+        "@id": "ex:DataAccountExport_502#cs",
+        "gx:formatType": "application/cccex",
+        "gx:requestType": "API",
+        "gx:accessType": "digital"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:DataTransfer_351",
+      "type": [
+        "VerifiableCredential",
+        "gx:DataTransfer"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.230+00:00",
+      "credentialSubject": {
+        "@id": "ex:DataTransfer_351#cs",
+        "gx:scope": "MiTbUMUo",
+        "gx:reason": "rjAwXDui"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:CustomerInstructions_310",
+      "type": [
+        "VerifiableCredential",
+        "gx:CustomerInstructions"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.230+00:00",
+      "credentialSubject": {
+        "@id": "ex:CustomerInstructions_310#cs",
+        "gx:terms": {
+          "@id": "ex:LegalDocument_418#cs"
+        },
+        "gx:means": {
+          "@id": "ex:LegalDocument_418#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:SubContractor_773",
+      "type": [
+        "VerifiableCredential",
+        "gx:SubContractor"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.230+00:00",
+      "credentialSubject": {
+        "@id": "ex:SubContractor_773#cs",
+        "gx:communicationMethods": {
+          "@id": "ex:LegalDocument_418#cs"
+        },
+        "gx:legalName": "TXqEvaYY",
+        "gx:applicableJurisdiction": "TR",
+        "gx:informationDocuments": {
+          "@id": "ex:LegalDocument_418#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:Resource_348",
+      "type": [
+        "VerifiableCredential",
+        "gx:Resource"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.231+00:00",
+      "credentialSubject": {
+        "@id": "ex:Resource_348#cs",
+        "gx:aggregationOfResources": {
+          "@id": "ex:Resource_348#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:VirtualResource_52",
+      "type": [
+        "VerifiableCredential",
+        "gx:VirtualResource"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.231+00:00",
+      "credentialSubject": {
+        "@id": "ex:VirtualResource_52#cs",
+        "gx:license": "TORQUE-1.1",
+        "gx:copyrightOwnedBy": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:resourcePolicy": "QMedSgub",
+        "gx:aggregationOfResources": {
+          "@id": "ex:Resource_348#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:TermsAndConditions_852",
+      "type": [
+        "VerifiableCredential",
+        "gx:TermsAndConditions"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.231+00:00",
+      "credentialSubject": {
+        "@id": "ex:TermsAndConditions_852#cs",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:hash": "KWySHNUG"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:GPSUnit_209",
+      "type": [
+        "VerifiableCredential",
+        "gx:GPSUnit"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.231+00:00",
+      "credentialSubject": {
+        "@id": "ex:GPSUnit_209#cs",
+        "gx:seconds": 49,
+        "gx:minutes": 25,
+        "gx:degrees": -99,
+        "gx:decimals": {
+          "@value": 0.29,
+          "@type": "xsd:float"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:GPSLocation_510",
+      "type": [
+        "VerifiableCredential",
+        "gx:GPSLocation"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.231+00:00",
+      "credentialSubject": {
+        "@id": "ex:GPSLocation_510#cs",
+        "gx:latitude": {
+          "@id": "ex:GPSUnit_209#cs"
+        },
+        "gx:altitude": "yQYaMeee",
+        "gx:crs": "CRS",
+        "gx:longitude": {
+          "@id": "ex:GPSUnit_209#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:EnergyMix_208",
+      "type": [
+        "VerifiableCredential",
+        "gx:EnergyMix"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.231+00:00",
+      "credentialSubject": {
+        "@id": "ex:EnergyMix_208#cs",
+        "gx:renewableEnergy": {
+          "@value": 2.67,
+          "@type": "xsd:float"
+        },
+        "gx:attainmentDate": {
+          "@value": "2025-10-04",
+          "@type": "xsd:date"
+        },
+        "gx:hourlyCarbonFreeEnergy": {
+          "@value": 2.61,
+          "@type": "xsd:float"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:GPSUnit_14",
+      "type": [
+        "VerifiableCredential",
+        "gx:GPSUnit"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.231+00:00",
+      "credentialSubject": {
+        "@id": "ex:GPSUnit_14#cs",
+        "gx:seconds": 30,
+        "gx:minutes": 43,
+        "gx:degrees": -90,
+        "gx:decimals": {
+          "@value": 0.54,
+          "@type": "xsd:float"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:GPSLocation_339",
+      "type": [
+        "VerifiableCredential",
+        "gx:GPSLocation"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.231+00:00",
+      "credentialSubject": {
+        "@id": "ex:GPSLocation_339#cs",
+        "gx:latitude": {
+          "@id": "ex:GPSUnit_14#cs"
+        },
+        "gx:altitude": "flAwRYOi",
+        "gx:crs": "CRS",
+        "gx:longitude": {
+          "@id": "ex:GPSUnit_14#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:Resource_288",
+      "type": [
+        "VerifiableCredential",
+        "gx:Resource"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.231+00:00",
+      "credentialSubject": {
+        "@id": "ex:Resource_288#cs",
+        "gx:aggregationOfResources": {
+          "@id": "ex:Resource_288#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:AvailabilityZone_863",
+      "type": [
+        "VerifiableCredential",
+        "gx:AvailabilityZone"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.231+00:00",
+      "credentialSubject": {
+        "@id": "ex:AvailabilityZone_863#cs",
+        "gx:address": {
+          "@id": "ex:Address_992#cs"
+        },
+        "gx:aggregationOfResources": {
+          "@id": "ex:Resource_288#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:LegalDocument_138",
+      "type": [
+        "VerifiableCredential",
+        "gx:LegalDocument"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.232+00:00",
+      "credentialSubject": {
+        "@id": "ex:LegalDocument_138#cs",
+        "gx:mimeTypes": "application/vnd.datalog",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:governingLawCountries": "DJ"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:WaterUsageEffectiveness_798",
+      "type": [
+        "VerifiableCredential",
+        "gx:WaterUsageEffectiveness"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.232+00:00",
+      "credentialSubject": {
+        "@id": "ex:WaterUsageEffectiveness_798#cs",
+        "gx:certifications": {
+          "@id": "ex:LegalDocument_138#cs"
+        },
+        "gx:waterUsageEffectiveness": {
+          "@value": 2.63,
+          "@type": "xsd:float"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:EnergyUsageEfficiency_368",
+      "type": [
+        "VerifiableCredential",
+        "gx:EnergyUsageEfficiency"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.232+00:00",
+      "credentialSubject": {
+        "@id": "ex:EnergyUsageEfficiency_368#cs",
+        "gx:certifications": {
+          "@id": "ex:LegalDocument_138#cs"
+        },
+        "gx:powerUsageEffectiveness": {
+          "@value": 1.81,
+          "@type": "xsd:float"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:DataCenter",
+      "type": [
+        "VerifiableCredential",
+        "gx:Datacenter"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.232+00:00",
+      "credentialSubject": {
+        "@id": "ex:DataCenter#cs",
+        "gx:energyMix": {
+          "@id": "ex:EnergyMix_208#cs"
+        },
+        "gx:aggregationOfResources": {
+          "@id": "ex:AvailabilityZone_863#cs"
+        },
+        "gx:waterUsageEffectiveness": {
+          "@id": "ex:WaterUsageEffectiveness_798#cs"
+        },
+        "gx:maintainedBy": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:manufacturedBy": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:location": {
+          "@id": "ex:Address_992#cs"
+        },
+        "gx:ownedBy": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:energyUsageEfficiency": {
+          "@id": "ex:EnergyUsageEfficiency_368#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:GPSUnit_891",
+      "type": [
+        "VerifiableCredential",
+        "gx:GPSUnit"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.232+00:00",
+      "credentialSubject": {
+        "@id": "ex:GPSUnit_891#cs",
+        "gx:seconds": 48,
+        "gx:degrees": 121,
+        "gx:decimals": {
+          "@value": 0.83,
+          "@type": "xsd:float"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:GPSLocation_897",
+      "type": [
+        "VerifiableCredential",
+        "gx:GPSLocation"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.232+00:00",
+      "credentialSubject": {
+        "@id": "ex:GPSLocation_897#cs",
+        "gx:latitude": {
+          "@id": "ex:GPSUnit_891#cs"
+        },
+        "gx:altitude": "utMCjjny",
+        "gx:crs": "CRS",
+        "gx:longitude": {
+          "@id": "ex:GPSUnit_891#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:Address_992",
+      "type": [
+        "VerifiableCredential",
+        "gx:Address"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.232+00:00",
+      "credentialSubject": {
+        "@id": "ex:Address_992#cs",
+        "gx:countryCode": "GU",
+        "gx:gps": {
+          "@id": "ex:GPSLocation_897#cs"
+        },
+        "gx:countryName": "ZGcrFXOV"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:LegalDocument_547",
+      "type": [
+        "VerifiableCredential",
+        "gx:LegalDocument"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.232+00:00",
+      "credentialSubject": {
+        "@id": "ex:LegalDocument_547#cs",
+        "gx:mimeTypes": "application/ld+json",
+        "gx:url": {
+          "@value": "ipfs://myCID",
+          "@type": "xsd:anyURI"
+        },
+        "gx:involvedParties": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:governingLawCountries": "TL"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:WaterUsageEffectiveness_363",
+      "type": [
+        "VerifiableCredential",
+        "gx:WaterUsageEffectiveness"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.232+00:00",
+      "credentialSubject": {
+        "@id": "ex:WaterUsageEffectiveness_363#cs",
+        "gx:certifications": {
+          "@id": "ex:LegalDocument_547#cs"
+        },
+        "gx:waterUsageEffectiveness": {
+          "@value": 2.05,
+          "@type": "xsd:float"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:Resource_22",
+      "type": [
+        "VerifiableCredential",
+        "gx:Resource"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.232+00:00",
+      "credentialSubject": {
+        "@id": "ex:Resource_22#cs",
+        "gx:aggregationOfResources": {
+          "@id": "ex:Resource_22#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:AvailabilityZone_726",
+      "type": [
+        "VerifiableCredential",
+        "gx:AvailabilityZone"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.232+00:00",
+      "credentialSubject": {
+        "@id": "ex:AvailabilityZone_726#cs",
+        "gx:address": {
+          "@id": "ex:Address_992#cs"
+        },
+        "gx:aggregationOfResources": {
+          "@id": "ex:Resource_22#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:EnergyUsageEfficiency_482",
+      "type": [
+        "VerifiableCredential",
+        "gx:EnergyUsageEfficiency"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.232+00:00",
+      "credentialSubject": {
+        "@id": "ex:EnergyUsageEfficiency_482#cs",
+        "gx:certifications": {
+          "@id": "ex:LegalDocument_547#cs"
+        },
+        "gx:powerUsageEffectiveness": {
+          "@value": 1.26,
+          "@type": "xsd:float"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:Datacenter_992",
+      "type": [
+        "VerifiableCredential",
+        "gx:Datacenter"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.232+00:00",
+      "credentialSubject": {
+        "@id": "ex:Datacenter_992#cs",
+        "gx:energyMix": {
+          "@id": "ex:EnergyMix_208#cs"
+        },
+        "gx:aggregationOfResources": {
+          "@id": "ex:AvailabilityZone_726#cs"
+        },
+        "gx:waterUsageEffectiveness": {
+          "@id": "ex:WaterUsageEffectiveness_363#cs"
+        },
+        "gx:maintainedBy": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:manufacturedBy": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:location": {
+          "@id": "ex:Address_992#cs"
+        },
+        "gx:ownedBy": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:energyUsageEfficiency": {
+          "@id": "ex:EnergyUsageEfficiency_482#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:DatacenterAllocation_638",
+      "type": [
+        "VerifiableCredential",
+        "gx:DatacenterAllocation"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.232+00:00",
+      "credentialSubject": {
+        "@id": "ex:DatacenterAllocation_638#cs",
+        "gx:portNumber": 1,
+        "gx:refersTo": {
+          "@id": "ex:Datacenter_992#cs"
+        },
+        "gx:floor": "YDHVsdUO",
+        "gx:patchPanel": "FwSABfms",
+        "gx:rackNumber": "vUCPceAa"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:InterconnectionPointIdentifier_616",
+      "type": [
+        "VerifiableCredential",
+        "gx:InterconnectionPointIdentifier"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.232+00:00",
+      "credentialSubject": {
+        "@id": "ex:InterconnectionPointIdentifier_616#cs",
+        "gx:macAddress": "11:ce:8d:5f:Fd:B0",
+        "gx:ipAddress": "22.65.310.4",
+        "gx:completeIPI": "OibtorQV",
+        "gx:datacenterAllocation": {
+          "@id": "ex:DatacenterAllocation_638#cs"
+        },
+        "gx:ipiType": "Link",
+        "gx:ipiProvider": "fqfNfJWJ",
+        "gx:specificParameters": "CSWTOZfs"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:InternetServiceProvider_21",
+      "type": [
+        "VerifiableCredential",
+        "gx:InternetServiceProvider"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.232+00:00",
+      "credentialSubject": {
+        "@id": "ex:InternetServiceProvider_21#cs",
+        "gx:headquartersAddress": {
+          "@id": "ex:Address_992#cs"
+        },
+        "gx:subOrganisationOf": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:legalAddress": {
+          "@id": "ex:Address_992#cs"
+        },
+        "gx:registrationNumber": {
+          "@id": "https://example.org/subjects/123"
+        },
+        "gx:parentOrganizationOf": {
+          "@id": "ex:LegalPerson_713#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:PointOfPresence",
+      "type": [
+        "VerifiableCredential",
+        "gx:PointOfPresence"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.232+00:00",
+      "credentialSubject": {
+        "@id": "ex:PointOfPresence#cs",
+        "gx:ownedBy": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:interconnectedParticipants": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:waterUsageEffectiveness": {
+          "@id": "ex:WaterUsageEffectiveness_363#cs"
+        },
+        "gx:interconnectionPointIdentifier": {
+          "@id": "ex:InterconnectionPointIdentifier_616#cs"
+        },
+        "gx:maintainedBy": {
+          "@id": "ex:InternetServiceProvider_21#cs"
+        },
+        "gx:energyUsageEfficiency": {
+          "@id": "ex:EnergyUsageEfficiency_482#cs"
+        },
+        "gx:manufacturedBy": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:location": {
+          "@id": "ex:Address_992#cs"
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:ServiceOfferingTest",
+      "type": [
+        "VerifiableCredential",
+        "gx:ServiceOffering"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.232+00:00",
+      "credentialSubject": {
+        "@id": "ex:ServiceOfferingTest#cs",
+        "gx:requiredMeasures": {
+          "@id": "ex:Measure_565#cs"
+        },
+        "gx:providerContactInformation": {
+          "@id": "ex:ContactInformation_229#cs"
+        },
+        "gx:keyword": "cqJlozJj",
+        "gx:dataPortability": {
+          "@id": "ex:DataPortability_797#cs"
+        },
+        "gx:dataProtectionRegime": "LGPD2019",
+        "gx:dataAccountExport": {
+          "@id": "ex:DataAccountExport_502#cs"
+        },
+        "gx:cryptographicSecurityStandards": "RFC9142",
+        "gx:provisionType": "public",
+        "gx:legalDocuments": [
+          {
+            "@id": "ex:AccessControlManagement_895#cs"
+          },
+          {
+            "@id": "ex:AssetsManagement_222#cs"
+          },
+          {
+            "@id": "ex:BusinessContinuityMeasures_646#cs"
+          },
+          {
+            "@id": "ex:ChangeAndConfigurationManagement_562#cs"
+          },
+          {
+            "@id": "ex:ComplianceAssurance_976#cs"
+          },
+          {
+            "@id": "ex:CopyrightAndIntellectualPropertyDocument_553#cs"
+          },
+          {
+            "@id": "ex:CustomerAuditingRights_452#cs"
+          },
+          {
+            "@id": "ex:CustomerDataAccessTerms_903#cs"
+          },
+          {
+            "@id": "ex:CustomerDataProcessingTerms_530#cs"
+          },
+          {
+            "@id": "ex:DataProtectionRegulationMeasures_110#cs"
+          },
+          {
+            "@id": "ex:DevelopmentCycleSecurity_651#cs"
+          },
+          {
+            "@id": "ex:DocumentChangeProcedures_419#cs"
+          },
+          {
+            "@id": "ex:EmployeeResponsibilities_47#cs"
+          },
+          {
+            "@id": "ex:EnvironmentalImpactReport_775#cs"
+          },
+          {
+            "@id": "ex:GovernmentInvestigationManagement_619#cs"
+          },
+          {
+            "@id": "ex:InformationSecurityOrganization_657#cs"
+          },
+          {
+            "@id": "ex:InformationSecurityPolicies_979#cs"
+          },
+          {
+            "@id": "ex:InformationSecurityRiskManagement_761#cs"
+          },
+          {
+            "@id": "ex:LegallyBindingAct_839#cs"
+          },
+          {
+            "@id": "ex:OperationalSecurity_585#cs"
+          },
+          {
+            "@id": "ex:PhysicalSecurity_133#cs"
+          },
+          {
+            "@id": "ex:ProcurementManagementSecurity_207#cs"
+          },
+          {
+            "@id": "ex:ProductSecurity_815#cs"
+          },
+          {
+            "@id": "ex:RoleAndResponsibilities_135#cs"
+          },
+          {
+            "@id": "ex:SecurityIncidentManagement_112#cs"
+          },
+          {
+            "@id": "ex:ServiceAgreementOffer_462#cs"
+          },
+          {
+            "@id": "ex:UserDocumentationMaintenance_880#cs"
+          }
+        ],
+        "gx:possiblePersonalDataTransfers": {
+          "@id": "ex:DataTransfer_351#cs"
+        },
+        "gx:customerInstructions": {
+          "@id": "ex:CustomerInstructions_310#cs"
+        },
+        "gx:providedBy": {
+          "@id": "ex:LegalPerson_713#cs"
+        },
+        "gx:subContractors": {
+          "@id": "ex:SubContractor_773#cs"
+        },
+        "gx:servicePolicy": {
+          "@id": "ex:accessUsagePolicy",
+          "@type": "gx:AccessUsagePolicy",
+          "gx:policyLanguage": "Rego",
+          "gx:policyDocument": "package example\n\ndefault allow = false\n\nallow {\n    input.user == alice\n    input.action == read\n}"
+        },
+        "gx:serviceScope": "WOJPVKzh",
+        "gx:hostedOn": {
+          "@id": "ex:VirtualResource_52#cs"
+        },
+        "gx:serviceOfferingTermsAndConditions": {
+          "@id": "ex:TermsAndConditions_852#cs"
+        },
+        "gx:aggregationOfResources": [
+          {
+            "@id": "ex:Resource_348#cs"
+          },
+          {
+            "@id": "ex:DataCenter#cs"
+          },
+          {
+            "@id": "ex:PointOfPresence#cs"
+          }
+        ]
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/gaia-x/development#",
+        {
+          "ex": "http://example.org"
+        }
+      ],
+      "@id": "ex:credentialIssuer",
+      "type": [
+        "VerifiableCredential",
+        "gx:Issuer"
+      ],
+      "issuer": "did:web:gaia-x.eu",
+      "validFrom": "2025-01-13T14:25:50.232+00:00",
+      "credentialSubject": {
+        "@id": "ex:credentialIssuer#cs",
+        "gx:gaiaxTermsAndConditions": "4bd7554097444c960292b4726c2efa1373485e8a5565d94d41195214c5e0ceb3"
+      }
+    }
+  ]
